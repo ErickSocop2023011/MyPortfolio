@@ -141,7 +141,7 @@ export function CVDetails() {
             </section>
         </div>
 
-        {/* Botón para generar PDF (fuera del contenedor capturado) */}
+        {/*
         <div className="max-w-4xl mx-auto flex justify-center mt-6">
             <button
             onClick={generatePDF}
@@ -152,6 +152,7 @@ export function CVDetails() {
             Generate PDF
             </button>
         </div>
+        */}
         </>
     );
 }

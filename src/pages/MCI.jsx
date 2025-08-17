@@ -2,18 +2,20 @@ import { Target, Rocket, Award } from "lucide-react";
 
 export function MCI() {
     return (
-        <section className="p-4 max-w-5xl mx-auto text-center flex flex-col gap-10">
-            <h2 className="text-3xl font-bold text-neutral-800 dark:text-white">
+        <div className="p-6 sm:p-10 ml-16 md:ml-20">
+            <h1 className="text-3xl font-bold mb-6 text-center">
                 Crucially Important Goals (MCI)
-            </h2>
+            </h1>
+            
+            <div className="bg-white dark:bg-zinc-800 rounded-2xl p-6 shadow-md mb-6">
+                <p className="text-neutral-600 dark:text-neutral-300">
+                    These are the goals that will have the greatest impact on my professional growth.
+                    Achieving them will move me closer to becoming a skilled full-stack developer
+                    and cybersecurity professional.
+                </p>
+            </div>
 
-            <p className="text-neutral-600 dark:text-neutral-300 max-w-2xl mx-auto">
-                These are the goals that will have the greatest impact on my professional growth.  
-                Achieving them will move me closer to becoming a skilled full-stack developer  
-                and cybersecurity professional.
-            </p>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {[
                     {
                         icon: <Target className="w-10 h-10 text-red-500" />,
@@ -45,6 +47,6 @@ export function MCI() {
                     </div>
                 ))}
             </div>
-        </section>
+        </div>
     );
 }
