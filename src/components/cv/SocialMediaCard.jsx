@@ -4,7 +4,7 @@ const socialLinks = [
     {
         icon: <Github className="w-10 h-10 transition-colors group-hover:text-black" />,
         label: "GitHub",
-        url: "https://github.com/ErickSocop2023011",
+        url: "https://github.com/ErickSocop",
     },
     {
         icon: <Linkedin className="w-10 h-10 transition-colors group-hover:text-blue-600" />,
