@@ -20,7 +20,7 @@ export function MCI() {
                     {
                         icon: <Target className="w-10 h-10 text-red-500" />,
                         title: "Portfolio Completion",
-                        text: "From 0 to 5 fully deployed projects by December 2025, showcasing my skills in React, Node.js, and MySQL.",
+                        text: "From 0 to 5 fully deployed projects by December 2025, showcasing my skills in React, Node.js, and MongoDB.",
                     },
                     {
                         icon: <Rocket className="w-10 h-10 text-blue-500" />,

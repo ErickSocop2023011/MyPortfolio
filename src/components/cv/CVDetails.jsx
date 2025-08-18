@@ -34,10 +34,13 @@ export function CVDetails() {
         { name: "Spring Boot", icon: <SiSpringboot className="w-8 h-8 text-[#6DB33F]" title="Spring Boot" /> },
     ];
 
-    const projects = [
+    const individualProjects = [
         { name: "Personal Portfolio", desc: "Developed with React and TailwindCSS to showcase personal projects and skills." },
-        { name: "Company Management API", desc: "REST API built with Node.js, Express, and MongoDB for managing companies and reports." },
-        { name: "Shop Management System", desc: "Desktop application developed with JavaFX and MySQL database integration." },
+        { name: "Company Management API", desc: "REST API built with Node.js, Express, and MongoDB for managing companies and reports." }
+    ];
+
+    const teamProjects = [
+        { name: "BlueBrain System", desc: "A tutoring platform exclusively for Kinal students. Learners can request private tutoring sessions or join public tutoring groups according to their needs. In addition, users may apply to become tutors by submitting a photo of their grades along with a statement explaining why they want to teach. A teacher reviews the information and decides whether to approve or reject the application." }
     ];
 
     const generatePDF = () => {
@@ -89,20 +92,41 @@ export function CVDetails() {
             <section>
             <h3 className="text-xl font-semibold text-neutral-700 dark:text-neutral-200 mb-2">Education</h3>
             <ul className="list-disc pl-6 text-neutral-600 dark:text-neutral-300 space-y-1">
-                <li>Computer Science Program - Centro Educativo Técnico Laboral Kinal (2023 - 2025)</li>
-                <li>Basic Education - Colegio Ciencia y Arte (2020 - 2022)</li>
+                <li>Perito en Computación (3-year Technical Diploma in Computer Science) - Centro Educativo Técnico Laboral Kinal (2023 - 2025)</li>
+                <li>Educación Básica (Basic Education) - Colegio Ciencia y Arte (2020 - 2022)</li>
             </ul>
             </section>
 
             <section>
             <h3 className="text-xl font-semibold text-neutral-700 dark:text-neutral-200 mb-2">Projects</h3>
-            <ul className="list-disc pl-6 text-neutral-600 dark:text-neutral-300 space-y-1">
-                {projects.map((p) => (
-                <li key={p.name}>
-                    <span className="font-medium">{p.name}:</span> {p.desc}
-                </li>
-                ))}
-            </ul>
+            
+            <div className="space-y-4">
+                <div>
+                    <h4 className="font-medium text-neutral-700 dark:text-neutral-200 mb-1">Individual Projects</h4>
+                    <ul className="list-disc pl-6 text-neutral-600 dark:text-neutral-300 space-y-1">
+                        {individualProjects.map((p) => (
+                            <li key={p.name}>
+                                <span className="font-medium">{p.name}:</span> {p.desc}
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 className="font-medium text-neutral-700 dark:text-neutral-200 mb-1">Team Projects</h4>
+                    <ul className="list-disc pl-6 text-neutral-600 dark:text-neutral-300 space-y-1">
+                        {teamProjects.map((p) => (
+                            <li key={p.name}>
+                                <span className="font-medium">{p.name}:</span> {p.desc}
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+
+                <div>
+                    <span className="font-medium">Additional projects can be found on my GitHub.</span>
+                </div>
+            </div>
             </section>
 
             <section>
